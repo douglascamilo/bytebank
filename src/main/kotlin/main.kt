@@ -1,5 +1,9 @@
 fun main() {
     println("--------------")
     println("Welcome to Bytebank")
-    print("--------------")
+    println("--------------")
+
+    val accountOwner = "Douglas"
+    println()
+    println("Account owner: $accountOwner")
 }
