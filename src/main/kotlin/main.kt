@@ -4,6 +4,13 @@ fun main() {
     println("--------------")
 
     val accountOwner = "Douglas"
-    println()
     println("Account owner: $accountOwner")
+
+    val accountNumber = 4321
+    var accountBalance = 0.0
+    accountBalance = 100 + 2.0
+    accountBalance += 200
+
+    println("Account number: $accountNumber")
+    println("Account balance: $accountBalance")
 }
