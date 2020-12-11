@@ -3,14 +3,19 @@ fun main() {
     println("Welcome to Bytebank")
     println("--------------")
 
-    val accountOwner = "Douglas"
-    println("Account owner: $accountOwner")
+    val bankAccountOwner = "Douglas"
+    println("Bank account owner: $bankAccountOwner")
 
-    val accountNumber = 4321
-    var accountBalance = 0.0
-    accountBalance = 100 + 2.0
-    accountBalance += 200
+    val bankAccount = 4321
+    var bankBalance = 100 + 2.0
+    bankBalance += 200
 
-    println("Account number: $accountNumber")
-    println("Account balance: $accountBalance")
+    println("Bank account: $bankAccount")
+    println("Bank balance: $bankBalance")
+
+    when {
+        bankBalance > 0.0 -> println("Your bank balance is positive")
+        bankBalance < 0.0 -> println("Your bank balance is negative")
+        else -> println("No bank balance")
+    }
 }
