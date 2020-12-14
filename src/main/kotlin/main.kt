@@ -3,6 +3,21 @@ fun main() {
     println("Welcome to Bytebank")
     println("--------------")
 
+    val douglasAccount = Account()
+    douglasAccount.owner = "Douglas"
+    douglasAccount.number = 1001
+    douglasAccount.balance = 200.0
+
+    val babiAccount = Account()
+    babiAccount.owner = "Babi"
+    babiAccount.number = 1002
+    babiAccount.balance = 300.0
+
+    println(douglasAccount)
+    println(babiAccount)
+}
+
+private fun createAllAccounts() {
     for (index in 5 downTo 1) {
         val bankAccountOwner = "Douglas $index"
         println("\nBank account owner: $bankAccountOwner")
@@ -13,8 +28,6 @@ fun main() {
 
         println("Bank account: $bankAccount")
         println("Bank balance: $bankBalance")
-
-//        validateBankBalance(bankBalance)
     }
 }
 
