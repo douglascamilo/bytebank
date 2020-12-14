@@ -1,10 +1,10 @@
-class Account {
-    var owner = ""
-    var number = 0
-    var balance = 0.0
+class Account(val owner: String, val number: Int) {
+    var balance = 0.0; private set
 
     fun payIn(value: Double) {
-        balance += value
+        if (value > 0) {
+            balance += value
+        }
     }
 
     fun withdraw(value: Double): Boolean {

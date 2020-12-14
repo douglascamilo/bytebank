@@ -3,15 +3,11 @@ fun main() {
     println("Welcome to Bytebank")
     println("--------------")
 
-    val douglasAccount = Account()
-    douglasAccount.owner = "Douglas"
-    douglasAccount.number = 1001
-    douglasAccount.balance = 200.0
+    val douglasAccount = Account("Douglas", 1001)
+    douglasAccount.payIn(200.0)
 
-    val babiAccount = Account()
-    babiAccount.owner = "Babi"
-    babiAccount.number = 1002
-    babiAccount.balance = 300.0
+    val babiAccount = Account("Babi", 1002)
+    babiAccount.payIn(300.0)
 
     println(douglasAccount)
     println(babiAccount)
@@ -40,6 +36,7 @@ fun main() {
     println("Transfer from ${babiAccount.owner} to ${douglasAccount.owner}")
     babiAccount.transfer(90.0, douglasAccount)
 
+    douglasAccount.payIn(-100.0)
     println(douglasAccount)
     println(babiAccount)
 }
