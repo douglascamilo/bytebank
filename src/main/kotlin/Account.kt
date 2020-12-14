@@ -16,6 +16,15 @@ class Account {
         return true
     }
 
+    fun transfer(value: Double, destination: Account): Boolean {
+        if (!this.withdraw(value)) {
+            return false
+        }
+
+        destination.payIn(value)
+        return true
+    }
+
     override fun toString(): String {
         return "Account(owner='$owner', number=$number, balance=$balance)"
     }

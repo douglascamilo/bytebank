@@ -35,6 +35,13 @@ fun main() {
 
     println(douglasAccount)
     println(babiAccount)
+
+    println()
+    println("Transfer from ${babiAccount.owner} to ${douglasAccount.owner}")
+    babiAccount.transfer(90.0, douglasAccount)
+
+    println(douglasAccount)
+    println(babiAccount)
 }
 
 private fun createAllAccounts() {
