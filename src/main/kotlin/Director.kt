@@ -4,7 +4,5 @@ class Director(
     salary: Double
 ) : Employee(name, cpf, salary) {
 
-    override fun bonus(): Double {
-        return salary * 0.25
-    }
+    override val bonus: Double get() = salary * 0.25
 }

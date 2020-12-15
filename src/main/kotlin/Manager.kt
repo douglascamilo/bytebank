@@ -4,7 +4,5 @@ class Manager(
     salary: Double
 ) : Employee(name, cpf, salary) {
 
-    override fun bonus(): Double {
-        return salary * 0.15
-    }
+    override val bonus: Double get() = salary * 0.2
 }

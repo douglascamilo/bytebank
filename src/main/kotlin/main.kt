@@ -20,13 +20,13 @@ fun main() {
     )
 
     println(employee)
-    println("Employee bonus: ${employee.bonus()}")
+    println("Employee bonus: ${employee.bonus}")
 
     println()
     println(manager)
-    println("Manager bonus: ${manager.bonus()}")
+    println("Manager bonus: ${manager.bonus}")
 
     println()
     println(director)
-    println("Manager bonus: ${director.bonus()}")
+    println("Manager bonus: ${director.bonus}")
 }

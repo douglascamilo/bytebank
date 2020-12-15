@@ -4,9 +4,7 @@ open class Employee(
     val salary: Double
 ) {
 
-    open fun bonus(): Double {
-        return salary * 0.1
-    }
+    open val bonus: Double get() = salary * 0.1
 
     override fun toString(): String {
         return "${this.javaClass.simpleName}(name='$name', cpf='$cpf', salary=$salary)"
