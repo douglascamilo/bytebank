@@ -29,4 +29,12 @@ fun main() {
     println()
     println(director)
     println("Manager bonus: ${director.bonus}")
+
+    val bonusTotalAmount = BonusCalculator()
+        .calculate(employee)
+        .calculate(manager)
+        .calculate(director)
+        .amount
+
+    println("\nBonus total amount: $bonusTotalAmount")
 }
